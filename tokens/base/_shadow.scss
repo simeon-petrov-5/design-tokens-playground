@@ -1,0 +1,6 @@
+@use "../config";
+$partial-prefix: 'shadow';
+
+:root {
+    --#{config.$prefix}-#{$partial-prefix}: 0px 4px 10px #BCBED3;
+}

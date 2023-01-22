@@ -1,0 +1,23 @@
+@use "../config";
+
+$partial-prefix: "size";
+$steps: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 20, 24, 28, 32, 36, 40,
+  44, 48, 52, 56, 60, 64, 72, 80, 96;
+
+:root {
+  --#{config.$prefix}-#{$partial-prefix}-base: 0.25rem;
+  --#{config.$prefix}-#{$partial-prefix}-0: 0px;
+  --#{config.$prefix}-#{$partial-prefix}-1px: 1px;
+  --#{config.$prefix}-#{$partial-prefix}-0_5: 0.125rem;
+  --#{config.$prefix}-#{$partial-prefix}-1_5: 0.375rem;
+  --#{config.$prefix}-#{$partial-prefix}-2_5: 0.625rem;
+  --#{config.$prefix}-#{$partial-prefix}-3_5: 0.875rem;
+}
+
+@each $step in $steps {
+  :root {
+    --#{config.$prefix}-#{$partial-prefix}-#{$step}: calc(
+      #{$step} * #{var(--#{config.$prefix}-#{$partial-prefix}-base)}
+    );
+  }
+}
