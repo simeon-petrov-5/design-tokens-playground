@@ -1,14 +1,9 @@
 @use "../config";
-$partial-prefix: 'rounded';
+$type: 'rounded';
 
 :root {
-    --#{config.$prefix}-#{$partial-prefix}-none: 0px;
-    // --#{config.$prefix}-#{$partial-prefix}-sm: 0.125rem;
-    --#{config.$prefix}-#{$partial-prefix}: 0.25rem;
-    --#{config.$prefix}-#{$partial-prefix}-md: 0.375rem;
-    // --#{config.$prefix}-#{$partial-prefix}-lg: 0.5rem;
-    // --#{config.$prefix}-#{$partial-prefix}-xl: 0.75rem;
-    // --#{config.$prefix}-#{$partial-prefix}-2xl: 1rem;
-    // --#{config.$prefix}-#{$partial-prefix}-3xl: 1.5rem;
-    --#{config.$prefix}-#{$partial-prefix}-full: 9999px;
+    --#{config.$prefix}-#{$type}-none: 0px;
+    --#{config.$prefix}-#{$type}: 0.25rem;
+    --#{config.$prefix}-#{$type}-lg: 2rem;
+    --#{config.$prefix}-#{$type}-full: 9999px;
 }

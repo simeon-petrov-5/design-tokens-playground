@@ -1,0 +1,8 @@
+@use "../config";
+$type: 'font-size-fluid';
+
+:root {
+    --#{config.$prefix}-#{$type}-sm: clamp(10px, 1.5vw, .75rem);
+    --#{config.$prefix}-#{$type}: clamp(.75rem, 2vw, 1rem);
+    --#{config.$prefix}-#{$type}-lg: clamp(1rem, 3vw, 1.25rem);
+}

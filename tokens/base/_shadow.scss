@@ -1,6 +1,6 @@
 @use "../config";
-$partial-prefix: 'shadow';
+$type: 'shadow';
 
 :root {
-    --#{config.$prefix}-#{$partial-prefix}: 0px 4px 10px #BCBED3;
+    --#{config.$prefix}-#{$type}: 0px 4px 10px #BCBED3;
 }

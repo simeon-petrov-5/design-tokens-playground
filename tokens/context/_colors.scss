@@ -3,11 +3,11 @@
 $status-prefix: 'status';
 :root{
     // Status
-    --#{config.$prefix}-#{$status-prefix}-clr-toDo: var(--scg-clr-neutral-3);
+    --#{config.$prefix}-#{$status-prefix}-clr-toDo: var(--scg-clr-neutral-2);
     --#{config.$prefix}-#{$status-prefix}-clr-toDo-bg: var(--scg-clr-secondary);
 
-    --#{config.$prefix}-#{$status-prefix}-clr-inProgress: var(--scg-clr-warn);
-    --#{config.$prefix}-#{$status-prefix}-clr-inProgress-bg: var(--scg-clr-warn-light);
+    --#{config.$prefix}-#{$status-prefix}-clr-inProgress: var(--scg-clr-warning);
+    --#{config.$prefix}-#{$status-prefix}-clr-inProgress-bg: var(--scg-clr-warning-light);
 
     --#{config.$prefix}-#{$status-prefix}-clr-onHold: var(--scg-clr-danger);
     --#{config.$prefix}-#{$status-prefix}-clr-onHold-bg: var(--scg-clr-danger-light);
@@ -20,9 +20,9 @@ $icon-prefix: 'icon';
 :root{
     // Icons
     --#{config.$prefix}-#{$icon-prefix}-clr-story: var(--scg-clr-success);
-    --#{config.$prefix}-#{$icon-prefix}-clr-spike: var(--scg-clr-warn);
+    --#{config.$prefix}-#{$icon-prefix}-clr-spike: var(--scg-clr-warning);
     --#{config.$prefix}-#{$icon-prefix}-clr-task: var(--scg-clr-info);
     --#{config.$prefix}-#{$icon-prefix}-clr-cosmetic: var(--scg-clr-info);
     --#{config.$prefix}-#{$icon-prefix}-clr-enabler: var(--scg-clr-enabler);
-    --#{config.$prefix}-#{$icon-prefix}-clr: var(--scg-clr-neutral-3);
+    --#{config.$prefix}-#{$icon-prefix}-clr-default: var(--scg-clr-neutral-3);
 }

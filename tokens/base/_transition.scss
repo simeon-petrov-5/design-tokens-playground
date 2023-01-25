@@ -1,0 +1,8 @@
+@use "../config";
+$type: 'transition';
+
+:root {
+    --#{config.$prefix}-#{$type}-duration: 300ms;
+    --#{config.$prefix}-#{$type}-timing: ease-in-out;
+    --#{config.$prefix}-#{$type}-all: all var(--#{config.$prefix}-#{$type}-duration) var(--#{config.$prefix}-#{$type}-timing);
+}

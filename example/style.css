@@ -1,0 +1,102 @@
+body {
+  padding: var(--scg-size-2) var(--scg-size-4);
+  line-height: 1.3;
+  background: var(--scg-clr-neutral-2);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(var(--grid-cols, 1), 1fr);
+  gap: var(--scg-size-4);
+}
+
+.card {
+  background-color: var(--scg-clr-neutral-1);
+  border-radius: var(--scg-rounded);
+  overflow: hidden;
+  box-shadow: var(--scg-shadow);
+}
+
+.card .card__img-container {
+  height: calc(30vw / var(--grid-cols, 1));
+}
+
+.card .card__img-container .card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card .card__body {
+  text-align: center;
+  padding: var(--scg-size-3);
+}
+
+.card .card__date {
+  color: var(--scg-clr-primary);
+  font-size: var(--scg-font-size-fluid-sm);
+  font-weight: bold;
+}
+
+.card .card__title {
+  color: var(--scg-clr-black);
+  font-size: var(--scg-font-size-fluid-lg);
+  margin-bottom: var(--scg-size-3);
+}
+
+.card .card__desc {
+  font-size: var(--scg-font-size-fluid);
+  color: var(--scg-clr-neutral-4);
+  text-align: justify;
+}
+
+
+.card .card__footer {
+  display: flex;
+  gap: var(--scg-size-1px);
+  background-color: var(--scg-clr-neutral-1);
+}
+
+.card .card__footer .stats {
+
+  text-align: center;
+  flex-grow: 1;
+  padding: var(--scg-size-3);
+  background-color: var(--stats-bg, var(--scg-clr-info));
+  color: var(--stats-clr, var(--scg-clr-neutral-1));
+  font-weight: bold;
+}
+
+/* card--danger */
+.card.card--done .card__footer .stats {
+  --stats-bg: var(--scg-status-clr-done-bg);
+  --stats-clr: var(--scg-status-clr-done);
+}
+
+.card.card--warn .card__footer .stats {
+  --stats-bg: var(--scg-status-clr-inProgress-bg);
+  --stats-clr: var(--scg-status-clr-inProgress);
+}
+
+@media screen and (min-width: 640px) {
+  .grid {
+    --grid-cols: 2;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --scg-size-base: 0.5rem;
+  }
+
+  .grid {
+    --grid-cols: 3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --scg-size-base: 0.75rem;
+  }
+}

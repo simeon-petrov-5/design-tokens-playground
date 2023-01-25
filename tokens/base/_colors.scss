@@ -1,27 +1,35 @@
 @use "../config";
-$partial-prefix: 'clr';
+$type: 'clr';
 
 :root {
     // Brand
-    --#{config.$prefix}-#{$partial-prefix}-primary: #7B83EB;
-    --#{config.$prefix}-#{$partial-prefix}-secondary: #F5F6FE;
-    --#{config.$prefix}-#{$partial-prefix}-tetriary: #E8EAFC;
+    --#{config.$prefix}-#{$type}-primary: #7B83EB;
+    --#{config.$prefix}-#{$type}-secondary: #F5F6FE;
+    --#{config.$prefix}-#{$type}-tetriary: #E8EAFC;
 
     // Neutral
-    --#{config.$prefix}-#{$partial-prefix}-neutral-1: #FFFFFF;
-    --#{config.$prefix}-#{$partial-prefix}-neutral-2: #ECECF4;
-    --#{config.$prefix}-#{$partial-prefix}-neutral-3: #BCBED3;
-    --#{config.$prefix}-#{$partial-prefix}-neutral-4: #9796A6;
-    --#{config.$prefix}-#{$partial-prefix}-neutral-5: #1D1B27;
+    --#{config.$prefix}-#{$type}-neutral-1: #FFFFFF;
+    --#{config.$prefix}-#{$type}-neutral-2: #ECECF4;
+    --#{config.$prefix}-#{$type}-neutral-3: #BCBED3;
+    --#{config.$prefix}-#{$type}-neutral-4: #9796A6;
+    --#{config.$prefix}-#{$type}-neutral-5: #1D1B27;
 
-    // State
-    --#{config.$prefix}-#{$partial-prefix}-success: #B0EB32;
-    --#{config.$prefix}-#{$partial-prefix}-success-light: #F4FCE2;
-    --#{config.$prefix}-#{$partial-prefix}-warn: #FFC233;
-    --#{config.$prefix}-#{$partial-prefix}-warn-light: #FFF8E9;
-    --#{config.$prefix}-#{$partial-prefix}-danger: #FF004E;
-    --#{config.$prefix}-#{$partial-prefix}-danger-light: #FFE5ED;
-    --#{config.$prefix}-#{$partial-prefix}-info: #49B9ED;
-    --#{config.$prefix}-#{$partial-prefix}-enabler: #800080;
+    // Basic
+    --#{config.$prefix}-#{$type}-white: white;
+    --#{config.$prefix}-#{$type}-black: black;
+
+    // Feedback
+    --#{config.$prefix}-#{$type}-success: #B0EB32;
+    --#{config.$prefix}-#{$type}-success-light: #F4FCE2;
+
+    --#{config.$prefix}-#{$type}-warning: #FFC233;
+    --#{config.$prefix}-#{$type}-warning-light: #FFF8E9;
+
+    --#{config.$prefix}-#{$type}-danger: #FF004E;
+    --#{config.$prefix}-#{$type}-danger-light: #FFE5ED;
+
+    --#{config.$prefix}-#{$type}-info: #49B9ED;
+
+    --#{config.$prefix}-#{$type}-enabler: #800080;
 
 }
